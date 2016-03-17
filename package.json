@@ -1,0 +1,55 @@
+{
+  "name": "ci-tracker",
+  "description": "Tracker code",
+  "homepage": "http://github.com/cursorinsight/ci-tracker",
+  "version": "0.0.0",
+  "author": {
+    "name": "Bence Golda",
+    "email": "bence@cursorinsight.com",
+    "url": "https://github.com/gbence"
+  },
+  "maintainers": [
+    {
+      "name": "Oliver Mate Torteli",
+      "email": "oliver@cursorinsight.com",
+      "url": "https://github.com/tortelio"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cursorinsight/ci-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cursorinsight/ci-tracker/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "~>4.0",
+    "npm": "~>4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.8",
+    "body-parser": "^1.14.2",
+    "ci-trap": "^0.2.0",
+    "connect": "^3.4.1",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-standard": "^5.2.2",
+    "gulp-uglify": "^1.5.2",
+    "gulp-util": "^3.0.7",
+    "http": "0.0.0",
+    "serve-static": "^1.10.2"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
+}
