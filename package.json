@@ -8,13 +8,11 @@
     "email": "bence@cursorinsight.com",
     "url": "https://github.com/gbence"
   },
-  "maintainers": [
-    {
-      "name": "Oliver Mate Torteli",
-      "email": "oliver@cursorinsight.com",
-      "url": "https://github.com/tortelio"
-    }
-  ],
+  "contributors": [{
+    "name": "Oliver Mate Torteli",
+    "email": "oliver@cursorinsight.com",
+    "url": "https://github.com/tortelio"
+  }],
   "repository": {
     "type": "git",
     "url": "git://github.com/cursorinsight/ci-tracker.git"
