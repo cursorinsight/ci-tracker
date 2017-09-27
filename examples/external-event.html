@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CITrap -- Tracker</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="/example.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Tracker external event test</h1>
+      <p>On this page you can test how to send custom information via event stream.<p>
+      <button id="love-sender">Send us love!</button>
+    </div>
+    <script>
+var _ctt = _ctt || [];
+_ctt.push(['setAccount', 'UA-12345-1']);
+(function(d,u){
+  u=((("https:"==document.location.protocol)?"https:":"http:")+"//"+u+"/");
+  var g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.defer=true; g.async=true; g.src=u+'tracker.min.js';
+  s.parentNode.insertBefore(g,s);})(document,"localhost:8100");
+
+window.addEventListener("load", function(){
+  var loveSender = document.getElementById("love-sender");
+
+  loveSender.addEventListener("click", function(event) {
+    if (event.preventDefault) { event.preventDefault(); } else { event.returnValue = false; }
+    var markEvent = new window.Event("ct:mark");
+    markEvent.text = "<3 love";
+    document.dispatchEvent(markEvent)
+  });
+});
+    </script>
+  </body>
+</html>

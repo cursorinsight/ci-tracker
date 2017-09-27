@@ -19,7 +19,8 @@ gulp.task('compile-js:example-tracker', function () {
 var exampleHTMLFiles = [
   'examples/page-*.html',
   'examples/*cors.html',
-  'examples/production.html'
+  'examples/production.html',
+  'examples/external-event.html'
 ]
 gulp.task('copy-html:example-tracker', function () {
   return gulp.src(exampleHTMLFiles)
