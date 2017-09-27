@@ -16,10 +16,13 @@ gulp.task('compile-js:example-tracker', function () {
     .pipe(gulp.dest(buildDir))
 })
 
+var exampleHTMLFiles = [
+  'examples/page-*.html',
+  'examples/*cors.html',
+  'examples/production.html'
+]
 gulp.task('copy-html:example-tracker', function () {
-  return gulp.src(['examples/page-*.html',
-                   'examples/*cors.html',
-                   'examples/production.html'])
+  return gulp.src(exampleHTMLFiles)
     .pipe(gulp.dest(buildDir))
 })
 

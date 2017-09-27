@@ -15,4 +15,3 @@ gulp.task('dist', function () {
     .pipe(concat(project.name + '-' + project.version + '.min.js'))
     .pipe(gulp.dest('dist'))
 })
-

@@ -26,14 +26,14 @@
     "npm": "~>4.0"
   },
   "devDependencies": {
-    "babel-eslint": "^4.1.8",
+    "babel-eslint": "^8.0.1",
     "body-parser": "^1.14.2",
     "ci-trap": "^0.2.0",
     "connect": "^3.4.1",
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.0",
-    "gulp-standard": "^5.2.2",
+    "gulp-standard": "^10.1.1",
     "gulp-uglify": "^1.5.2",
     "gulp-util": "^3.0.7",
     "http": "0.0.0",
