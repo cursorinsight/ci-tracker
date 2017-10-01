@@ -1,12 +1,14 @@
 # ci-tracker
 
-`ci-tracker` is a wrapper project which manages [ci-trap][github/ci-trap] (e.g.: start data collector, set meta information and manage cookies).
+`ci-tracker` is a wrapper project that manages [ci-trap][github/ci-trap] (e.g.:
+start data collector, set meta information and manage cookies).
 
 ## Getting Started
 
 ### Installation
 
-Copy the minified javascript file from the dist directory to your project. Insert the following code to the end of your application HTML file.
+Copy the minified javascript file from the dist directory to your project.
+Insert the following code to the end of your application HTML file.
 
 ```html
 <script>
@@ -24,7 +26,8 @@ _ctt.push(['setUrl', (("https:"==document.location.protocol)?"https:":"http:")+'
 
 ### Prerequisites
 
-For development you need [node](https://nodejs.org) (>=4.0.0) and [npm](https://www.npmjs.com) (>=3.0.0).
+You need [node](https://nodejs.org) (>=4.0.0) and [npm](https://www.npmjs.com)
+(>=3.0.0) for development.
 
 ### Installation
 
@@ -35,13 +38,15 @@ npm install
 
 ## Example
 
-The following command will start a webserver that serves example applications at http://localhost:8100.
+The following command will start a webserver that serves example applications
+at http://localhost:8100.
 ```
 npm run gulp serve
 ```
 
 ## License
 
-ci-tracker is released under the [MIT license](https://github.com/cursorinsight/ci-tracker/blob/master/LICENSE.md).
+ci-tracker is released under the
+[MIT license](https://github.com/cursorinsight/ci-tracker/blob/master/LICENSE.md).
 
 [github/ci-trap]: https://github.com/cursorinsight/ci-trap
