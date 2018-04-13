@@ -7,7 +7,7 @@ start data collector, set meta information and manage cookies).
 
 ### Installation
 
-Copy the minified javascript file from the dist directory to your project.
+Copy the minified JavaScript file from the dist directory to your project.
 Insert the following code to the end of your application HTML file.
 
 ```html
